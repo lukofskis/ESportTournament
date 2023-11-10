@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Komandos</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <nav class="navbar">
+        <a href="tournament.html" class="nav-item">Turnyrai</a>
+        <a href="team.html" class="nav-item">Komandos</a>
+        <a href="matches.html" class="nav-item">Rungtynės</a>
+        <!-- Dropdown for Account -->
+        <div class="dropdown">
+            <button class="dropbtn">Paskyra</button>
+            <div class="dropdown-content">
+                <a href="login.html">Prisijungti</a>
+                <a href="register.html">Registruotis</a>
+                <a href="profile.html">Profilis</a>
+            </div>
+        </div>
+    </nav>
+</head>
+<body>
+    <h1>Komandų sąrašas</h1>
+    <!-- Table for Teams -->
+    <table>
+        <thead>
+        <tr>
+            <th>Pavadinimas</th>
+            <th>Žaidėjų skaičius</th>
+            <th>Laimėjimai</th>
+            <th>Pralaimėjimai</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Example Row -->
+        <tr onclick="window.location.href='team-details.html';">
+            <td>Team A</td>
+            <td>2001</td>
+            <td>6</td>
+            <td>75%</td>
+        </tr>
+        <!-- Add more rows as needed -->
+        <tr onclick="window.location.href='team-details.html';">
+            <td>Team B</td>
+            <td>2001</td>
+            <td>6</td>
+            <td>75%</td>
+        </tr>
+        <tr onclick="window.location.href='team-details.html';">
+            <td>Team C</td>
+            <td>2001</td>
+            <td>6</td>
+            <td>75%</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
